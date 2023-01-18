@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- this is a comment
+             hotkkeys for comments ctrl + k ctrl + c
+                      to uncomment ctrl + k ctrl + u
+                OR
+                      toggle with ctrl + /
+            
+            content in this tag (head) does not appear on the web page when display
+                in the browser
+            content in this tag is used by the browser to reference other sites that
+                support this page, aids in search engines, assigns a title to your
+                web page, and other support features       -->
+
+        <meta charset="utf-8" >
+        <meta name="author" content="Don Welch">
+        <title>Intro to HTML tags</title>
+    </head>
+    <body>
+        <!-- tags and text within this body tag is your browser displayed content -->
+        <!-- header tags have 6 levels, 1-6
+             the tags are hn where n is 1-6
+             importance of heading is 1 to 6-->
+        <h1>Markup Demo</h1>
+
+        <!-- paragraph tag
+            a paragraph is a collection of text lines
+            each paragraph starts a new block-line-->
+        <p>There are many ways to make a presence on the web and a website is just one of them. Other types of web presence include social media channels and sites that allow customers to review your business. Before you start making a website, make sure you understand what is provided by the different types of web presence and the costs and benefits associated with each type.</p>
+
+        <h2>Try Photoshop</h2>
+        <p>Photoshop is part of Creative Cloud and comes with Adobe CreativeSync, so your assets are always at your fingertips right when you need them. CreativeSync powers your Creative Cloud Libraries and Adobe Stock, and it connects your mobile and desktop apps.</p>
+        <!-- the anchor tag (a.k.a link)
+             this tag setups a reference to another web location
+             that location can be 
+                a) a completely different web site
+                b) another page in the current web site
+                c) a location on the current web site page being displayed
+            Parameters: href - the destination location
+                        target - allows one to request a new browser
+                                 window for the reference
+            content of this tag appears as a link on the displayed web page-->
+        <a href="http://www.adobe.com/products/photoshop.html"
+                target="_blank">Download Trial Version.</a>
+
+        <h2>Photoshop Logo image</h2>
+        <!-- the img (image) tag allows the display of images
+             this is a void tag, it does not have an open/close pair
+                 tag.
+             information to be used by this tag is done via parameters
+             required parameter:
+                src specifies the location to find the image
+                alt (standard for this course) text that is displayed 
+                   if the image can be found at the specific source location
+             optional parameter:
+                title adds a tool tip to your image
+             REQUIRED: address referencing to other items in this web site WILL
+                       use relative addressing-->
+        <img src="img/photoshop.png" alt="photoshop logo" title="Greatest of all digital software">
+
+       <h2> Champions League Quarter Finals</h2>
+        <p>A strange enough start, though. Mitroglou prances down the Benficaright and fires a low cross into the Bayern box. It is a decent delivery, but there is nobody there to take a shot on goal. Bayern clear, and Ribery dances down the left again. He feeds Douglas Costa down the channel. Douglas Costa stands one up to the far post, and Vidal heads home into the right-hand portion of the net with the greatest of ease from six yards!</p>
+
+        <!-- lists come in two style: unordered and ordered
+             the structure of a list start with the appropriate order tag
+             within the appropriate order tag there item
+             these items are specified using the line item tag (li)
+             each item gets its own line
+            the major difference of the list is their appearance-->
+
+        <!-- unordered-->
+        <ul>
+            <li>Barcelona</li>
+            <li>Manchester United</li>
+            <li>Real Madrid</li>
+            <li>Paris St Germain</li>
+            <li>Wolfsburg</li>
+        </ul>
+
+        <h2>Open Bridge from Photoshop</h2>
+        <p>To open Bridge from within Photoshop, go up to the File menu (in Photoshop) in the Menu Bar along the top of the screen and choose Browse in Bridge. If you are the type who likes keyboard shortcuts, you can choose the same command by pressing Ctrl+Alt+O (Win) or Command+Option+O (Mac).</p>
+        
+        <!-- ordered list-->
+        <ol>
+            <li>Go to the file menu</li>
+            <li>From the drop down select Browse in Bridge</li>
+            <li>Navigate to the file you wish to open</li>
+            <li>From the open file dialogue box click on the open button</li>
+        </ol>
+        
+        
+    </body>
+</html>
