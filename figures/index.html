@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="author" content="Don Welch">
+        <title>Images, Figures and Links </title>
+    </head>
+    <body>
+        <!-- the header and paragraph tags are block tags
+             this means that the content of the tag with begin on a new line
+             each tag has a default format built into it
+             the default format can be overridden with css code-->
+       <h1>Fiqure Demo</h1>
+       <p>HostGator gives you a vast array of tools to take your idea or business 
+        online today! From site building tools and templates, to our one-click 
+        application installer, everything you need to launch a website is 
+        literally at your fingertips.</p>
+        <p>
+            HostGator provides every customer with the necessary tools to get a 
+            fully-functional website up and running as quickly as possible. 
+            From our partnership with Weebly, providing an incredibly convenient 
+            drag-and-drop website builder, to our own QuickInstall application 
+            installer, you can have an amazing website online in no time!
+        </p>
+        <p>
+            Our dedicated Migrations Team is standing by to transfer your existing 
+            content from your prior host and configure it to perform optimally on 
+            our platform. We can also transfer domain registrations from other 
+            registrars in order to provide you complete management of your entire 
+            online portfolio all in one place! View Details
+        </p>
+        <p>
+            <!-- the image tag is an in-line block tag
+                 this means that the items is display WITHOUT moving to
+                    a new line
+                 straight text is treated as an in-line item-->
+            <img src="img/phone.png" alt="phone">
+            Our support staff is available 24/7/365 to assist you via Telephone, 
+            LiveChat, or Email with any hosting-related issues.
+        </p>
+        <p>
+            <img src="img/money.png" alt="money">
+            Try our services at no risk! If you're not completely satisfied, you 
+            can cancel within 45 days for a complete refund.
+        </p>
+        <p>
+            <img src="img/server.png" alt="server">
+            The availability of your website is our top priority. We stand by 
+                that fact with our uptime guarantee of 99.9% Uptime
+        </p>
+        <!-- figure tag
+             the tag is used to surround an img tag
+            the figure tag is a block tag
+            to add text either above or below the image, you can use the
+                figcaption tag-->
+        <figure>
+            <!-- <figcaption>caption text</figcaption> -->
+            <img src="img/gator-logo.png" alt="gator logo">
+            <figcaption>caption text</figcaption>
+        </figure>
+        <h2>Using an image as your anchor link</h2>
+        <!-- combine the anchor tag and the image tag as the anchor tag content
+             this example contains a sample of in-line css styling-->
+        <a href="http://www.adobe.com" target="_blank">
+            <img src="img/photoshop.png" alt="photoshop logo"
+                title="Go to Adobe..." style="width:80px; height:80px;">
+        </a>
+    </body>
+</html>
