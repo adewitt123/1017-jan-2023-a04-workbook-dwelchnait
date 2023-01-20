@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="author" content="Don Welch">
+        <title>Table Demo</title>
+    </head>
+    <body>
+        <!-- tags and text within this body tag is your browser displayed content -->
+        <h1>Table Demo</h1>
+        <p> Looking for the Best Canadian Web Hosting? We’ve reviewed the 
+            top Canadian web hosts and below you’ll find coupons and discounts for the 
+            Top Canadian Hosting providers.  More and more Canadians are looking for 
+            their website to be hosted in Canada to benefit from search engine rankings 
+            and to ensure their privacy is protected by Canadian laws.  If you’re a Canadian 
+            business looking for a suitable hosting provider then take a look at our list 
+            below of Canadian web hosts.
+        </p>
+        <!-- the border="1" will add a default border around the table and each cell
+             during validation this will produce an error
+             you MAY use this on your tables UNTIL we get to css styling-->
+        <table border="1">
+            <thead>
+                <!-- the thead will indicate a line of column headers
+                     the cell tag for this line will be <th>
+                     the contents of the cell will be bolded by default
+                    
+                    OPTIONALLY
+                     you may wish to have your title at the start of a
+                         table body row
+                    if so, then you would not have a thead area
+                    Instead, the first cell on a table row would be your <th> cell
+                -->
+                <tr>
+                    <!-- the tr tag is the table row tag
+                         it generates a new table row-->
+                         <th>Host Name</th>
+                         <th>Bandwidth</th>
+                         <th>Price</th>
+                         <th> Money Back</th>
+                         <th>Coupon</th>
+                         <th>Rating</th>
+                         <th>Go to ...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+                    tbody contains the data for the table
+                    each row represents a single row of table data
+                    thin of a grid system (tabular)
+                    the text will not have any styling by default
+
+                    see above you can use a th tag on your tbody row
+                    typically it would be the first tag of the row
+
+                    by default, you are expected to have on data cell for each
+                     thead cell
+
+                    basic structure
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        ...
+                    </tr>
+                -->
+                <tr> 
+                    <td>HostUpon</td>
+                    <td>Unlimited</td>
+                    <td>$3.68/mo</td>
+                    <td>30 days</td>
+                    <td>15% off</td>
+                    <td>5</td>
+                    <td><img src="img/phone.png" alt="phone"></td>
+                </tr>
+                <tr> 
+                    <td>BlueHost</td>
+                    <td>Unlimited</td>
+                    <td>$6.99/mo</td>
+                    <td>anytime</td>
+                    <td>$3.95/mo*</td>
+                    <td>3</td>
+                    <td><img src="img/money.png" alt="money"></td>
+                </tr>
+                <tr> 
+                    <td>HostGator</td>
+                    <td>Unlimited</td>
+                    <td>$3.71/mo</td>
+                    <td>43 days</td>
+                    <td>20%</td>
+                    <td>4</td>
+                    <td><img src="img/server.png" alt="server"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- the tfoot are is generally used for totals, special messages,
+                     comments
+                    
+                the rows in this are area setup in the same fashion as your tbody
+                you can merge td cells together to create a single large cell
+                to merge cells us the parameter colspan="n" where "n' is the
+                   number of data cells to merge into one
+                a table row shoul NOT have a set of merged cells greater than
+                   the number of columns on the table"-->
+                <tr>
+                    <td colspan="6">
+                        * limited to 3 months of service
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
