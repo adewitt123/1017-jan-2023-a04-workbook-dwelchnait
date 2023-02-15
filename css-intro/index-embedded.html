@@ -4,6 +4,21 @@
          <meta charset="utf-8" >
         <meta name="author" content="Don Welch">
         <title> <title>CSS Introduction Concepts</title></title>
+        <!-- this is the embedded styling for THIS page
+             the selector elements coded using this style of css affects ALL instances
+                of the selector on the page
+             IF an element selector has an inline style that is of the SAME rule
+                as in the embeeded stylle the inline style is said to "win"
+                which means that the inline style will be the style used-->
+        <style>
+            h1{
+                color:red;
+            }
+            p {
+                background-color: darksalmon;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -17,7 +32,7 @@
           </header>
           <main>
             <section>
-                <h2>Inline CSS on a paragraph element</h2>
+                <h2>Embedded CSS on a web page</h2>
                 <p style="background-color:aquamarine; font-family: Calibri;">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro possimus tempora saepe in. Explicabo ducimus, culpa quam alias dolores nobis voluptatum aut illum architecto laudantium atque esse consectetur fugiat vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aliquid quaerat nesciunt tenetur? Esse tempora quam voluptates ea est iusto mollitia magnam incidunt corporis, provident placeat exercitationem corrupti facere nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe modi est dolore autem hic culpa ducimus architecto earum rem voluptates perspiciatis consequuntur cum velit, aliquam sequi aut distinctio sunt. Suscipit?
                 </p>

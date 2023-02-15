@@ -34,16 +34,16 @@
                         <td>style="color:red; font-weight:bold;"</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Embedded</td>
+                        <td>Coded in your head area of the web page. Is started with the style element and contains the selectors and the rules for the desired CSS. Applies ONLY to the phyiscal page where the code is placed. Affects ALL selector instances of that type on the page.</td>
+                        <td>&lt;style&gt;<br/>selector {rule; [rule;...]}<br/>selector {rule; [rule;...]}<br/>&lt;/style&gt;</td>
+                        <td>&lt;style&gt;<br/>p {font-size:larger; font-weight:bold;}<br/>blockquote {background-color:lightblue;}<br/>&lt;/style&gt;</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>StyleSheet</td>
+                        <td>Similar to embedded however, the selectors and rules are code in a separate phyiscal file. This file can be shared throughout the entire web site. This file CAN be SAHARED across the web. Thus, all css is in one common place. This is the preferred technique to use. To use the style sheet on a particular web page, you must reference the stylesheet using a &&lt;link&gt; tag. This link tag needs to be in the head area.</td>
+                        <td>selector {rule; [rule;...]}<br/>selector {rule; [rule;...]}</td>
+                        <td>p {font-size:larger; font-weight:bold;}<br/>blockquote {background-color:lightblue;}</td>
                     </tr>
                 </tbody>
             </table>
