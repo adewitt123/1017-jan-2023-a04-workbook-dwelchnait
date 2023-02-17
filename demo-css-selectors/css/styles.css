@@ -1,0 +1,123 @@
+/*
+ this demo is introducing selectors and css layout styling
+
+ selectors can be represented by
+    a) html (element) tags
+    b) class names
+    c) id names
+    d) contain psuedo classes
+
+ selectors can be singular, grouped as multiple if they contain the same css
+
+ you can have multiple references to the same selector containing different rules
+ multiple same selectors accumulate all rules
+
+ If you have the same selector in different places and the same rule with a different
+   value, then the last declaration is the rule in effect
+*/
+
+/* multiple selectors*/
+/* 
+        a rule generally consist of an ->   attribute:value;
+*/ 
+body, h1, h2,
+h3,
+h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* the color rule is using the rgb setting for the color (hex code)
+   hex code for a color consist of 3 value representing red, green and blue
+   the values for each color is 2 characters
+   these characters a hex value of 0 to 15 (0,1,2,3,..9,a,b,c,d,e,f)
+   two hex characters make up a value for a color 00 (absence) or ff (full)
+   example black 000000
+           white ffffff
+   there is a shortcut that can be used if all values (colors) are the same
+            black 000
+            white fff
+*/
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#111; 
+}
+footer{
+    padding:40px;
+    background-color: #dedede;
+}
+
+/* "the last rule wins
+ if you have previously create a rule on a selector then
+    later re-specified the rule with a new value
+    the re-specified rule (last rule) is the rule that will be in effect
+
+ some rules can be coded as short forms which combine multiiple attributes into one
+ border-bottom combines the border-width border-style border-color
+*/
+h1{
+    padding: 48px;
+    color: #696969;
+    border-bottom: 10px solid #dedede;
+}
+
+/* child selector
+  this is an element selector with another element that is NOT necessarily directly
+     below the parent element selector
+
+     upper element (parent)
+        within the parent some other element (child) is used
+
+  every instance of the child element is affected by the rule
+*/
+
+main p{
+    font-style: italic;
+}
+
+/* decendant selecctor
+
+this selector resembles the child selector BUT differs in that the element are
+   directly below (next level) of the parent selector
+*/
+footer h2{
+    color:#c0c0c0;
+}
+
+main section h2{
+    color: #ff0000;
+}
+
+/* Classes
+
+syntax for naming is .develop-name { rules ]
+you CAN NOt use element names
+develop-name must be meaningful
+classes can be attached to any element
+classes are independent of an element
+on your html element, to use: class="develop-name [develop-name ....]"
+if you have multiple classes for a class parameter separate the names by a space
+
+types: user (targetted) class
+       psuedo class, these are attached to an elements
+
+anchor tag has several psuedo classes
+NOTE! the order in which you code your psuedo classess for the anchor is
+        EXTREMELY IMPORTANT
+
+a:link    unused link
+a:hover   used when your cursor hovers over the ancor tag
+a:visited used when the anchor tag has been clicked on previously
+a:active  used when you are actually clicking on the anchor tag
+
+*/
+
+.menu-items {
+    font-family: courier, sans-serif;
+    list-style-type: none;
+    width: 800px;
+    padding: 24px;
+    border-left: 5px solid red;
+    background-color: #f4f4f4;
+    margin-left: 24px;
+}
