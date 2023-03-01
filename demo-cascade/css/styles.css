@@ -1,0 +1,68 @@
+/*
+    element selector
+*/
+footer{
+    background-color: #333;
+}
+
+/*
+   multiple selector: element selector, child selector
+*/
+footer,
+footer a {
+    color:white;
+}
+
+/*
+    decendant selector (targetted)
+*/
+nav ul{
+    background-color: #ddd;
+}
+
+nav ul li{
+    border-bottom: 1px solid #333;
+}
+/* 
+ demo for investigating specificity of css
+nav li {
+    border-bottom: 5px solid rgb(242, 7, 7);
+} */
+
+nav ul li a{
+    color:#333;
+    text-decoration: none; /* remove the link below the anchor tag */
+}
+
+/*
+Classes
+every class has a base specificity value of 10
+you can target element with classes
+    the html element will NEED the class selector name at to it to work
+Pseudo classes
+  these are predefined classes that allow you to control the individual
+  actions of certain elements
+
+a:link
+a:hover
+a:visited
+a:active
+
+*/
+
+nav ul li a:hover{
+    color: blue;
+    font-weight: bold;
+    /* font-size:48px; */
+}
+
+/* 
+  targetted selector classes
+  AND
+  the class need to be indicated on the html element itself
+*/
+ul.navigation{
+    list-style: none;  /* remove the bullet points of an unorder list */
+    padding-left: 0;
+    border-left: 2px solid orange;
+}
