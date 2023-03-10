@@ -1,0 +1,70 @@
+body {
+	background-color: white;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	/* background-color: white;
+	border:1px solid black; */
+	/* typography css */
+	text-align: center;
+}
+ h1,
+ h2{
+	font-size: 36px;
+	font-weight: bold;
+	/* border: 1px solid black; */
+ }
+
+ h1{
+	font-size:48px;
+ }
+nav{
+	margin-top: 48px;
+	background-color: #ddd;
+}
+
+header,
+main{
+	margin-top: 24px;
+	background-color: #ddd;
+	height:450px;
+}
+
+main{
+	height: 800px;
+}
+
+footer{
+	height: 150px;
+	margin: 24px 0 48px 0;
+	background-color: #ddd;
+}
+
+/**********************************************************
+      how do I figure out the content width of an
+	       element if it is not supplied
+	  
+	  To solve this problem we will use the box model formula
+
+	     horizontal calculation
+
+	total width = lm + lb + lp + content width + rp + rb + rm
+		    960 = 30 + 2 + 0 + cw + 0 + 2 + 30
+            960 = 64 + cw
+	   960 - 64 = cw
+	        896 = cw
+************************************************************/
+
+section{
+	height: 300px;
+	margin:30px;
+	border: 2px solid black;
+	background-color: white;
+	/* default content width for a element is any area not
+	   allocated to margin, border or padding */
+	 width: 896px;
+}
