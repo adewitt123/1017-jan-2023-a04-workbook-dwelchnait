@@ -1,0 +1,91 @@
+body {
+	background-color: white;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	text-align: center;
+}
+
+main{
+	background-color: lightgray;
+}
+
+/****************************************************************
+
+	Demo css styling using Flexbox
+
+	default display of elements on your page is called "stacked"
+	block element will follow each other on a new line in a stacked fashion
+
+	to get your elements on the same line we can use various techniques such as
+	   a) floats
+	   b) flexbox   <---- we will be examining
+	   c) CSS GRID
+
+	to invoke flexbox the rule is
+	   display: flex;
+	   
+	flexbox basic restrictions:
+
+	a) affect ONLY the immediate level below where the flex is assigned
+	b) by default all elements at the same level which are with the
+	    immediate level below flex will have their size (content width)
+		automatically adjust to be the same
+	
+	to keep the specified width of your content area for an element while
+	   use flexbox; you will need to adjust the default flex-wrap (which is none)
+	use the rule:
+	    flex-wrap: wrap;
+
+box model formula
+  page width = col1 + col2
+             = (lm + lb + lp + cw + rp + rb + rm) +
+			   (lm + lb + lp + cw + rp + rb + rm)
+			= (10 + 2 + 0 + 150 + 0 + 2 + 0) +
+			  (10 + 2 + 0 + cw + 0 + 2 +10)
+			= 164 + 24 + cw
+		960 = 188 + cw
+		    = 772
+*****************************************************************/
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.asidearea{
+	width: 150px;
+	margin: 10px 0 10px 10px;
+	border: 2px solid black;
+	height: 610px;
+}
+/* 610 -10 -4 / 2 = height
+   596 / 2 = height
+   298 */
+   
+.contentarea{
+	margin:10px;
+	border: 2px solid black;
+	width: 772px;
+    height: 298px;
+}
+
+footer{
+	background-color: lightgray;
+}
+.red-paint{
+	background-color: red;
+}
+
+.blue-paint{
+	background-color: blue;
+}
+
+
+.yellow-paint{
+	background-color: yellow;
+	
+}

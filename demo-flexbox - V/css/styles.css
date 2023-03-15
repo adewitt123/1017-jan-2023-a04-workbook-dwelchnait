@@ -1,0 +1,143 @@
+body {
+	background-color: white;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	text-align: center;
+}
+
+main{
+	background-color: lightgray;
+}
+
+/****************************************************************
+
+	Demo css styling using Flexbox
+
+	default display of elements on your page is called "stacked"
+	block element will follow each other on a new line in a stacked fashion
+
+	to get your elements on the same line we can use various techniques such as
+	   a) floats
+	   b) flexbox   <---- we will be examining
+	   c) CSS GRID
+
+	to invoke flexbox the rule is
+	   display: flex;
+	   
+	flexbox basic restrictions:
+
+	a) affect ONLY the immediate level below where the flex is assigned
+	b) by default all elements at the same level which are with the
+	    immediate level below flex will have their size (content width)
+		automatically adjust to be the same
+	
+	to keep the specified width of your content area for an element while
+	   use flexbox; you will need to adjust the default flex-wrap (which is none)
+	use the rule:
+	    flex-wrap: wrap;
+
+box model formula
+  page width = 3(lm + lb + lp + cw + rp + rb + rm) + remainder
+         960 = 3(15 + 2 + 10 + cw + 10 + 2 + 0) + 15
+		 960 = 132 + 3 cw
+		 960-132/3 =cw
+		 828/3 =cw
+		 276 = cw
+
+	960 = lm + lb+ lp + cw + rp + rb + rm
+	960 = 15 + 2 + 10 + cw + 10 + 2 + 15
+	960 = 54 + cw
+	960 - 54 = cw
+	906 = cw
+*****************************************************************/
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.middle{
+	height: 300px;
+	width: 276px;
+	margin: 15px 0 0 15px;
+	border: 2px solid black;
+	padding: 10px;
+
+}
+
+/******************************************
+
+top left is equal to one middle box
+*******************************************/
+.top-left{
+	height: 150px;
+	width: 276px;
+	margin: 15px 0 0 15px;
+	border: 2px solid black;
+	padding: 10px;
+
+}
+
+/******************************************
+
+top right is equal to two middle boxes, 
+                    a margin, 2 paddings and 2 borders
+
+  context = 2(276) + 15 + 20 + 4
+          = 552 + 39
+		  = 591
+
+*******************************************/
+.top-right{
+	height: 150px;
+	width: 591px;
+	margin: 15px 0 0 15px;
+	border: 2px solid black;
+	padding: 10px;
+
+}
+
+.bottom{
+	height: 150px;
+	width: 906px;
+	margin: 15px 0 0 15px;
+	border: 2px solid black;
+	padding:10px;
+}
+
+footer{
+	background-color: lightgray;
+	padding:10px;
+}
+.red-paint{
+	background-color: red;
+}
+
+.blue-paint{
+	background-color: blue;
+}
+
+.orange-paint{
+	background-color: orange;
+}
+
+.aqua-paint{
+	background-color: aqua;
+}
+
+.white-paint{
+	background-color: white;
+
+	
+}
+
+.yellow-paint{
+	background-color: yellow;
+	
+}

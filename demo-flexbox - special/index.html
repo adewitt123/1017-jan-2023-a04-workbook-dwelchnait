@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- this is a comment
+             hotkkeys for comments ctrl + k ctrl + c
+                      to uncomment ctrl + k ctrl + u
+                OR
+                      toggle with ctrl + /
+            
+            content in this tag (head) does not appear on the web page when display
+                in the browser
+            content in this tag is used by the browser to reference other sites that
+                support this page, aids in search engines, assigns a title to your
+                web page, and other support features       -->
+
+        <meta charset="utf-8" >
+        <meta name="author" content="Don Welch">
+        <title>Flexbox Demo</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <section>
+                    <h1>Flexbox Demo</h1>
+                </section>
+            </header>
+            <!-- the items within the main tag are flexed
+                this means the immediate tags under main are flexed
+                the items are also flex wrapped-->
+            <main>
+                <div>
+                    <!-- the first div represents the 1st column-->
+                    <div class="red-paint asidearea"></div>
+                </div>
+                <div>
+                    <!-- the 2nd div represents the 2nd column-->
+                    <!-- the items within the 2nd column are NOT flexed
+                         these itmes revert to the default layout for 
+                            a browser page which is "stacked"-->
+                    <div class="blue-paint contentarea"></div>
+                    <div class="yellow-paint contentarea"></div>
+                </div>
+            </main>
+            <footer>
+                <!-- <div class="black-paint"> </div> -->
+            </footer>
+        </div>
+    </body>
+</html>
